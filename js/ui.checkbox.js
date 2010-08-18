@@ -160,6 +160,9 @@
 							that.element[0].click();
 							return false;
 						})
+						.bind('selectstart', function(e) {
+							return false;
+						})
 					;
 				}
 			if(opts.addLabel){
